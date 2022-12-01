@@ -11,6 +11,15 @@ applicantData = [
     {'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review'},
 ]
 
+
+@app.route('/applicants')
+@app.route('/applicants/<path:path>')
+def applicant(path=''):
+    appid = path
+    for app in applicantData:
+        if app['name'] == appid: return render_template('applicant.html', data = app)
+    return render_template('dashboard.html')
+
 @app.route('/dashboard')
 def dash():
     return render_template('dashboard.html', data = applicantData)

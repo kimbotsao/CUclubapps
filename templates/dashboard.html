@@ -2,12 +2,24 @@
 <html>
   <body>
     <h1>Hello this is our web-app</h1>
-    <div>{{data}}</div>
-  
     <div>
-      {% for n in data %}
-      <div>{{n}}</div>
-      {% endfor %}
+      <table>
+        <caption>Applicants</caption>
+        <tr>
+          <th>Name</th>
+          <th>School</th>
+          <th>Grad</th>
+          <th>Status</th>
+        </tr>
+        {% for n in data %}
+          <tr>
+            <td><a href="applicants/{{n['name']}}">{{n['name']}}</a></td>
+            <td>{{n['school']}}</td>
+            <td>{{n['grad']}}</td>
+            <td>{{n['status']}}</td>
+          </tr>
+        {% endfor %}
+      </table>
     </div>
 
   </body>  
