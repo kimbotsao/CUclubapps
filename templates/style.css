@@ -1,3 +1,5 @@
 .boxed {
     border: 5px solid green;
+    color: pink;
+    background-color: red;
 }
