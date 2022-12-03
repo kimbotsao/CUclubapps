@@ -9,9 +9,41 @@
       <div class="boxed">
         <div>Return to Dashboard</div>
         <div>
-          <div>{{data['name']}}</div>
+          <div>
+            <h2>{{data['name']}}</h2>
+          </div>
         </div>
-        <div>{{data}}</div>
+        <h3>Basic Profile</h3>
+        <div>
+          <table>
+            <tr>
+              <th>School</th>
+              <th>Class Year</th>
+              <th>Race</th>
+            </tr>
+            <tr>
+              <td>{{data['school']}}</td>
+              <td>Class of {{data['grad']}}</td>
+              <td>Native Hawaiian</td>
+            </tr>
+          </table>
+        </div>
+        <h3>
+          Bio
+        </h3>
+        <div>
+          My name is ______ and I am currently...
+        </div>
+        <h3>
+          Documents
+        </h3>
+        <h3>
+          Application Responses
+        </h3>
+        <h3>
+          Applicant Feedback
+        </h3>
+  
 
       </div> 
   
