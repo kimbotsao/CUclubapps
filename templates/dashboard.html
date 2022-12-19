@@ -1,15 +1,55 @@
 
 <html>
+  <head>
+    <title>Columbia Club Apps</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/dashboard.css') }}">
+  </head>
+
   <body>
-    <h1>Hello this is our web-app</h1>
-    <div>
+    <!-- HEADER - sticks across pages in full implementation -->
+    <div id="header">
+      <div class="title">
+        <h1>Applicant Dashboard</h1>
+      </div>
+      <div id="tabs">
+          <button class="tablinks">Edit Home</button>
+          <button class="tablinks">Manage Application</button>
+          <button class="tablinks">Track Applicants</button>
+      </div>
+    </div>
+
+    <!-- CLUB INFO AND ROUND FILTERING -->
+    <div id="subheader">
+      <div id="club-info" class="container">
+        <p>Fall 2022 OCM Application</p>
+        <p>Columbia We Bare Bears Society</p>
+      </div>
+  
+      <form class="dropdown">
+        <select name="round" id="rounds">
+          <option value="current">Current Round</option>
+          <option value="social">Social Round</option>
+          <option value="technical">Technical Round</option>
+          <option value="all">All Rounds</option>
+        </select>
+      </form>
+    </div>
+
+    <!-- ACTIONS - may need to move inline with applicants -->
+    <div id="action" class="container">
+      <button class="new-action">New Action</button>
+    </div>
+
+    <!-- APPLICANTS -->
+    <div id="content">
       <table>
-        <caption>Applicants</caption>
+        <caption>Active Applicants (how tf do i do this table header section)</caption>
         <tr>
           <th>Name</th>
           <th>School</th>
           <th>Grad</th>
           <th>Status</th>
+          <th>Interviewed?</th>
         </tr>
         {% for n in data %}
           <tr>
@@ -17,9 +57,14 @@
             <td>{{n['school']}}</td>
             <td>{{n['grad']}}</td>
             <td>{{n['status']}}</td>
+            <td>{{n['interviewed']}}</td>
           </tr>
         {% endfor %}
       </table>
+
+      <div id="archived">
+        <p>Archived Applicants (3)</p>
+      </div>
     </div>
 
   </body>  

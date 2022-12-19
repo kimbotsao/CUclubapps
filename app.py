@@ -3,12 +3,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 applicantData = [
-    {'name':'Panda Bear', 'school':'CC', 'grad':'2025', 'status':'Accepted'},
-    {'name':'Ice Bear', 'school':'SEAS', 'grad':'2024', 'status':'In Review'},
-    {'name':'Grizz Bear', 'school':'SEAS', 'grad':'2026', 'status':'Accepted'},
-    {'name':'Winnie T. Pooh', 'school':'GS', 'grad':'2023', 'status':'Rejected'},
-    {'name':'Kung Fu Panda', 'school':'CC', 'grad':'2024', 'status':'Accepted'},
-    {'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review'},
+    {'name':'Panda Bear', 'school':'CC', 'grad':'2025', 'status':'Accepted', 'interviewed':True},
+    {'name':'Ice Bear', 'school':'SEAS', 'grad':'2024', 'status':'In Review', 'interviewed':True},
+    {'name':'Grizz Bear', 'school':'SEAS', 'grad':'2026', 'status':'Accepted', 'interviewed':True},
+    {'name':'Winnie T. Pooh', 'school':'GS', 'grad':'2023', 'status':'Rejected', 'interviewed':True},
+    {'name':'Kung Fu Panda', 'school':'CC', 'grad':'2024', 'status':'Accepted', 'interviewed':True},
+    {'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review', 'interviewed':True},
 ]
 
 
