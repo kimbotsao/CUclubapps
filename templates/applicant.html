@@ -1,12 +1,106 @@
 
+<script src="{{url_for('static', filename='js/feature.js')}}"></script>
 <html>
-    <body>
-      <h1>Hello this is a applicant</h1>
-      <div>{{data}}</div>
     
-      <div>
-        <div>{{data['name']}}</div>
+<div>{{data}}</div>
+
+  <html>
+    <head>
+      <title>Columbia Club Apps</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/dashboard.css') }}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap">
+    </head>
+  
+    <body>
+      <!-- HEADER - sticks across pages in full implementation -->
+      <div id="header">
+        <div id="tabs">
+            <button class="tablink">Edit Home</button>
+            <button class="tablink">Manage Application</button>
+            <button class="tablink">Track Applicants</button>
+        </div>
       </div>
   
+      <!-- CARD -->
+      <div id="app-content">
+        <div id="theader">
+          <p><a href="/dashboard">Return to Dashboard</a></p>
+          <img src="static/imgs/{{data['pic']}}.jpeg" alt="{{data['name']}}">
+
+
+          <div class="select-down">
+            <select class="func" name="round" id="rounds">
+              <option value="current">Pending interview</option>
+              <option value="social">Interview</option>
+              <option value="technical">Cancelled</option>
+            </select>
+          </div>
+  
+
+          <h2>{{data['name']}}</h2>
+          <p>abcd@columbia.edu</p>
+          <p>999-883-3231</p>
+          <p>Application Submitted: 09/25/2022 at 7:49 PM</p>
+          <h3>Basic Profile</h3>
+          <table>
+            <tr>
+              <th>School</th>
+              <th>Class Year</th>
+              <th>Race</th>
+              <th>FGLI</th>
+            </tr>
+            <tr>
+              <td>{{data['school']}}</td>
+              <td>{{data['grad']}}</td>
+              <td>Asdasd</td>
+              <td>Yes</td>
+            </tr>
+         </table>
+
+          <h3>Bio</h3>
+          <p>I enjoy bears and keeping in touch with bear culture. In my free time, I like reading books</p>
+
+          <h3>Documents</h3>
+
+
+          <h3>Application Responses</h3>
+
+          <div class="accordion">
+            <button onclick="myFunction('a1')" class="accordion-header" type="button">Accordion 1</button>
+            <div class="accordion-panel" id='a1'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tortor in enim luctus interdum a vel tellus. Sed quis libero turpis. Integer euismod sollicitudin massa, ac ullamcorper risus fringilla ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+          </div>
+          
+          <div class="accordion">
+            <button onclick="myFunction('a2')"  class="accordion-header" type="button">Accordion 2</button>
+            <div class="accordion-panel" id='a2'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tortor in enim luctus interdum a vel tellus. Sed quis libero turpis. Integer euismod sollicitudin massa, ac ullamcorper risus fringilla ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+          </div>
+
+          <h3>Applicant Feedback</h3>
+          <div class="accordion">
+            <button onclick="myFunction('a3')" class="accordion-header" type="button">Accordion 1</button>
+            <div class="accordion-panel" id='a3'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tortor in enim luctus interdum a vel tellus. Sed quis libero turpis. Integer euismod sollicitudin massa, ac ullamcorper risus fringilla ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button onclick="myFunction('a4')"  class="accordion-header" type="button">Accordion 2</button>
+            <div class="accordion-panel" id='a4'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tortor in enim luctus interdum a vel tellus. Sed quis libero turpis. Integer euismod sollicitudin massa, ac ullamcorper risus fringilla ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+          </div>
+
+        </div>
+  
+
+      </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>  
   </html>
