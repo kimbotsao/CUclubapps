@@ -26,7 +26,7 @@ def dash():
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return render_template('dashboard.html', data = applicantData)
 
 if __name__ == '__main__':
     app.run(debug = True)
