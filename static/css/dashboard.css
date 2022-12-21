@@ -133,6 +133,7 @@ img {
   cursor: pointer;
   border: none;
   background-color: transparent;
+<<<<<<< HEAD
 }
 
 
@@ -168,4 +169,6 @@ img {
   display: none;
   background-color: white;
   overflow: hidden;
+=======
+>>>>>>> 48aef710 (table accordion not working)
 }
