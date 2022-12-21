@@ -115,9 +115,15 @@ img {
 .func {
   background-color: white;
   color: #444;
+  cursor: pointer;
   border: 2px solid;
   border-radius: 5px;
   border-color: #4E7099;
 }
 
+.tablink {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
 
