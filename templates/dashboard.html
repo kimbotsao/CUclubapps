@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <!-- HEADER - sticks across pages in full implementation -->
+    <!-- HEADER -->
     <div id="header">
       <div class="title">
         <h1>Applicant Dashboard</h1>
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <!-- ACTIONS - may need to move inline with applicants -->
+    <!-- ACTIONS -->
     <div id="action">
       <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle action-button" type="button" id="dropdownMenuButton"
@@ -128,7 +128,7 @@
         </div>
       </div>
 
-      <table>
+      <table class="table accordion">
         <tr>
           <th></th>
           <th></th>
@@ -139,7 +139,7 @@
           <th>Interviewed?</th>
         </tr>
         {% for n in data %}
-          <tr>
+          <tr data-bs-toggle="collapse" data-bs-target="#app-info{{n['idx']}}">
             <td><input type="checkbox" name="selection" /></td>
             <td><img src="static/imgs/{{n['pic']}}.jpeg" alt="{{n['name']}}"></td>
             <td><a href="applicants/{{n['name']}}">{{n['name']}}</a></td>
@@ -148,6 +148,9 @@
             <td>{{n['status']}}</td>
             <!-- <td>{{n['interviewed']}}</td> -->
             <td><input type="checkbox" name="interviewed" /></td>
+          </tr>
+          <tr class="collapse accordion-collapse" id="app-info{{n['idx']}}">
+            <td>Bio: My name is {{n['name']}}</td>
           </tr>
         {% endfor %}
       </table>

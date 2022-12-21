@@ -3,12 +3,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 applicantData = [
-    {'pic':'panda', 'name':'Panda Bear', 'school':'CC', 'grad':'2025', 'status':'Accepted', 'interviewed':True},
-    {'pic':'ice', 'name':'Ice Bear', 'school':'SEAS', 'grad':'2024', 'status':'In Review', 'interviewed':True},
-    {'pic':'grizz', 'name':'Grizz Bear', 'school':'SEAS', 'grad':'2026', 'status':'Accepted', 'interviewed':True},
-    {'pic':'pooh', 'name':'Winnie T. Pooh', 'school':'GS', 'grad':'2023', 'status':'Rejected', 'interviewed':True},
-    {'pic':'kfp', 'name':'Kung Fu Panda', 'school':'CC', 'grad':'2024', 'status':'Accepted', 'interviewed':True},
-    {'pic':'paddy', 'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review', 'interviewed':True},
+    {'idx': 1, 'pic':'panda', 'name':'Panda Bear', 'school':'CC', 'grad':'2025', 'status':'Accepted', 'interviewed':True},
+    {'idx': 2, 'pic':'ice', 'name':'Ice Bear', 'school':'SEAS', 'grad':'2024', 'status':'In Review', 'interviewed':True},
+    {'idx': 3, 'pic':'grizz', 'name':'Grizz Bear', 'school':'SEAS', 'grad':'2026', 'status':'Accepted', 'interviewed':True},
+    {'idx': 4, 'pic':'pooh', 'name':'Winnie T. Pooh', 'school':'GS', 'grad':'2023', 'status':'Rejected', 'interviewed':True},
+    {'idx': 5, 'pic':'kfp', 'name':'Kung Fu Panda', 'school':'CC', 'grad':'2024', 'status':'Accepted', 'interviewed':True},
+    {'idx': 6, 'pic':'paddy', 'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review', 'interviewed':True},
 ]
 
 
