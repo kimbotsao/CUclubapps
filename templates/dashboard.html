@@ -128,7 +128,7 @@
         </div>
       </div>
 
-      <table class="table accordion">
+      <table class="table w-75">
         <tr>
           <th></th>
           <th></th>
@@ -140,17 +140,18 @@
         </tr>
         {% for n in data %}
           <tr data-bs-toggle="collapse" data-bs-target="#app-info{{n['idx']}}">
-            <td><input type="checkbox" name="selection" /></td>
-            <td><img src="static/imgs/{{n['pic']}}.jpeg" alt="{{n['name']}}"></td>
-            <td><a href="applicants/{{n['name']}}">{{n['name']}}</a></td>
-            <td>{{n['school']}}</td>
-            <td>{{n['grad']}}</td>
-            <td>{{n['status']}}</td>
-            <!-- <td>{{n['interviewed']}}</td> -->
-            <td><input type="checkbox" name="interviewed" /></td>
+            <td class="align-middle"><input type="checkbox" name="selection" /></td>
+            <td class="align-middle"><img src="static/imgs/{{n['pic']}}.jpeg" alt="{{n['name']}}"></td>
+            <td class="align-middle"><a href="applicants/{{n['name']}}">{{n['name']}}</a></td>
+            <td class="align-middle">{{n['school']}}</td>
+            <td class="align-middle">{{n['grad']}}</td>
+            <td class="align-middle">{{n['status']}}</td>
+            <td class="align-middle"><input type="checkbox" name="interviewed" /></td>
           </tr>
           <tr class="collapse accordion-collapse" id="app-info{{n['idx']}}">
-            <td>Bio: My name is {{n['name']}}</td>
+            <td colspan="7">Bio: My name is {{n['name']}} and I am currently 
+              a junior in {{n['school']}}. I am interested in keeping in touch with my bear culture. 
+              In my spare time, I enjoy building igloos and going fishing in the arctic.</td>
           </tr>
         {% endfor %}
       </table>

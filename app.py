@@ -9,6 +9,10 @@ applicantData = [
     {'idx': 4, 'pic':'pooh', 'name':'Winnie T. Pooh', 'school':'GS', 'grad':'2023', 'status':'Rejected', 'interviewed':True},
     {'idx': 5, 'pic':'kfp', 'name':'Kung Fu Panda', 'school':'CC', 'grad':'2024', 'status':'Accepted', 'interviewed':True},
     {'idx': 6, 'pic':'paddy', 'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review', 'interviewed':True},
+    {'idx': 7, 'pic':'dk', 'name':'Donkey Kong', 'school':'GS', 'grad':'2024', 'status':'In Review', 'interviewed':True},
+    {'idx': 8, 'pic':'care', 'name':'Care Bear', 'school':'BC', 'grad':'2026', 'status':'In Review', 'interviewed':True},
+    {'idx': 9, 'pic':'kirby', 'name':'Kirby', 'school':'CC', 'grad':'2024', 'status':'In Review', 'interviewed':True},
+    {'idx': 10, 'pic':'simba', 'name':'Simba the Lion', 'school':'SEAS', 'grad':'2026', 'status':'In Review', 'interviewed':True},
 ]
 
 
