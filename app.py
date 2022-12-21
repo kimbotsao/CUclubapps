@@ -3,12 +3,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 applicantData = [
-    {'name':'Panda Bear', 'school':'CC', 'grad':'2025', 'status':'Accepted', 'interviewed':True},
-    {'name':'Ice Bear', 'school':'SEAS', 'grad':'2024', 'status':'In Review', 'interviewed':True},
-    {'name':'Grizz Bear', 'school':'SEAS', 'grad':'2026', 'status':'Accepted', 'interviewed':True},
-    {'name':'Winnie T. Pooh', 'school':'GS', 'grad':'2023', 'status':'Rejected', 'interviewed':True},
-    {'name':'Kung Fu Panda', 'school':'CC', 'grad':'2024', 'status':'Accepted', 'interviewed':True},
-    {'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review', 'interviewed':True},
+    {'pic':'panda', 'name':'Panda Bear', 'school':'CC', 'grad':'2025', 'status':'Accepted', 'interviewed':True},
+    {'pic':'ice', 'name':'Ice Bear', 'school':'SEAS', 'grad':'2024', 'status':'In Review', 'interviewed':True},
+    {'pic':'grizz', 'name':'Grizz Bear', 'school':'SEAS', 'grad':'2026', 'status':'Accepted', 'interviewed':True},
+    {'pic':'pooh', 'name':'Winnie T. Pooh', 'school':'GS', 'grad':'2023', 'status':'Rejected', 'interviewed':True},
+    {'pic':'kfp', 'name':'Kung Fu Panda', 'school':'CC', 'grad':'2024', 'status':'Accepted', 'interviewed':True},
+    {'pic':'paddy', 'name':'Paddington Bear', 'school':'BC', 'grad':'2025', 'status':'In Review', 'interviewed':True},
 ]
 
 
