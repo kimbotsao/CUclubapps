@@ -30,8 +30,7 @@
             <p id="app-email">abcd@columbia.edu</p>
             <p id="app-phone">999-883-3231</p>
           </div>
-
-          <img id="propic" src="static/imgs/{{data['pic']}}.jpeg" alt="{{data['name']}}">
+          <img id="propic" src="../../static/imgs/{{data['pic']}}.jpeg" alt="{{data['name']}}">
           <div id="container">
             <h2 id="uname" class="app-head small">{{data['name']}}</h2>
             <button id="status-but">In Review</button>
@@ -72,8 +71,8 @@
 
         <div class="app-section">
           <h3 class="app-head small">Documents</h3>
-          <a href="static/imgs/{{data['pic']}}.jpeg" download>{{data['name']}}-resume.pdf</a>
-          <a href="static/imgs/{{data['pic']}}.jpeg" download>{{data['name']}}-bear-pitch.pdf</a>
+          <a download>{{data['name']}}-resume.pdf</a>
+          <a download>{{data['name']}}-bear-pitch.pdf</a>
         </div>
 
         <div class="app-section">
@@ -101,14 +100,14 @@
             <button onclick="myFunction('a3')" class="accordion-header" type="button">Social Round #1</button>
             <div class="accordion-panel" id='a3'>
               <p>Interviewed by: Dean Tiny</p>
-              <a href="static/imgs/{{data['pic']}}.jpeg" download>Interview Notes</a>
+              <a download>Interview Notes</a>
             </div>
           </div>
           <div class="accordion">
             <button onclick="myFunction('a4')"  class="accordion-header" type="button">Professional Round #1</button>
             <div class="accordion-panel" id='a4'>
               <p>Interviewed by: Dean Piny</p>
-              <a href="static/imgs/{{data['pic']}}.jpeg" download>Interview Notes</a>
+              <a download>Interview Notes</a>
             </div>
           </div>
         </div>
@@ -118,3 +117,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>  
 </html>
+
