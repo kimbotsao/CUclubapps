@@ -8,6 +8,10 @@ body {
   color: #444;
   }
 
+a {
+  text-decoration: none; /* Remove the default underline from the link */
+}
+
 #header {
   display: flex;
   flex-direction: row;
@@ -45,6 +49,7 @@ body {
   margin: 10px;
 }
 
+
 #theader {
   width: 80%;
   background-color: white;
@@ -72,12 +77,56 @@ body {
 }
 
 
+#applicant {
+  margin: auto;
+  margin-top: 40px;
+  width: 75%;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#app-tab {
+  float: right;
+  position: absolute;
+  justify-content: space-between;
+  /* border: 5px solid;
+  border-color: blue; */
+  width: 30%;
+  top: 47;
+  right: 10;
+  font-weight: 100;
+  font-size: 20;
+}
+
+
+
+.app-head{
+  font-family: 'Manrope';
+  font-style: bold;
+  font-weight: 1700;
+  font-size: 40px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #000000;
+  margin-bottom: 20px;
+}
+.small{
+  font-size: 30px;
+}
+
 #app-content {
   margin: auto;
   width: 100%;
   padding: 10px;
 }
 
+#app-info{
+  border: 0;
+}
 
 table {
   border: 1px solid;
@@ -144,6 +193,9 @@ img {
   margin: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
+  color: black;
+  border-width: 0.11em;
+  margin-bottom: 3;
 }
 
 .accordion-header {
@@ -157,6 +209,7 @@ img {
   text-align: left;
   outline: none;
   transition: 0.4s;
+  color: black;
 }
 
 .accordion-header:hover {
@@ -168,4 +221,83 @@ img {
   display: none;
   background-color: white;
   overflow: hidden;
+  font-weight: 4;
+  border-top: 0.01rem solid darkblue;
+  padding-top: 10;
+  padding-bottom:10;
+}
+
+#return{
+  text-decoration: none;
+  background-color: white;
+  border: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z'/></svg>");
+  background-repeat: no-repeat;
+}
+
+.app-section{
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#first{
+  padding-top: 75px;
+  margin-bottom: 10px;
+}
+#subtime{
+  margin-bottom: 50px;
+  color: grey;
+}
+#propic{
+  float: left;
+  margin-right: 20px;
+  left: 0;
+  max-width: 100%;  
+}
+
+#pinfo{
+  float: right;
+  padding-right: 30px;
+  color: blue;
+}
+#rounds{
+  border-radius: 5px;
+  height: 40px;
+  width: 300x;
+}
+#status-but{
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #4E7099;
+  float: left;
+  margin-right: 15px;
+  height: 40px;
+  width: 100px;
+}
+a[download] {
+  background-color: white; /* Set the background color to white */
+  border: 1px solid darkblue; /* Add a blue outline to the button */
+  padding: 8px; /* Add some padding to the button */
+  display: inline-flex; /* Display the button as an inline-flex element */
+  align-items: center; /* Align the contents of the button vertically */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  color: darkblue; /* Set the text color to blue */
+  text-decoration: none; /* Remove the default underline from the link */
+  border-radius: 5px;
+  margin-right: 40px;
+  color: black;
+  border-width: 0.11em;
+}
+
+a[download]::before {
+  content: ""; /* Add an empty content to the pseudo-element */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z'/></svg>"); /* Set the background image to a download icon */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: contain; /* Scale the background image to fit the element */
+  width: 24px; /* Set the width of the pseudo-element */
+  height: 24px; /* Set the height of the pseudo-element */
+  margin-right: 8px; /* Add some space between the icon and the text */
 }
